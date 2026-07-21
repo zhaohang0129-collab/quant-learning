@@ -33,6 +33,11 @@ def check_market_value():          # 这个函数不会被执行 因为他不是
     p = Position("600519", 1500.0, 100)
     assert p.market_value(1600.0) == 160000.0
 
+def test_repr():
+    p = Position("600519", 1500.0, 100)
+    assert "600519" in repr(p)
+
+
 assert 1 + 1 == 2        # 通过
 assert 1 + 1 == 3        # 报错
 assert "abc".upper() == "ABC"    # 通过
