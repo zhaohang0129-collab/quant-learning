@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -e .
-          pip install pytest
+          pip install pytest pytest-cov
 
       - name: Run tests
         run: pytest tests/ -v
