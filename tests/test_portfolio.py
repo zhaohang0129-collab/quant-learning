@@ -39,6 +39,5 @@ def test_repr():
 
 
 assert 1 + 1 == 2        # 通过
-assert 1 + 1 == 3        # 报错
 assert "abc".upper() == "ABC"    # 通过
 assert [1, 2] == [1, 2]  # 通过
